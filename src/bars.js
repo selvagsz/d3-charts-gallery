@@ -1,15 +1,9 @@
 d3.chart('Bars', {
-  transform: function(data) {
-    var chart = this;
-    chart.data = data;
-    return data;
-  },
-
   initialize: function(options) {
     var chart = this;
     options = options || {};
 
-    var margin = options.margin || { top: 20, right: 50, bottom: 50, left: 50 };
+    var margin = options.margin || { top: 0, right: 0, bottom: 0, left: 0 };
     var colorsRange = options.colors || d3.scale.category20().range();
     var rangeRoundBand = options.rangeRoundBand || 0.05;
 

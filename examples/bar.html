@@ -5,15 +5,27 @@
 		<title>D3.chart Base Example</title>
 		<script src="../vendor/d3.js"></script>
     <script src="../vendor/d3.chart.js"></script>
+		<script src="../src/axis.js"></script>
 		<script src="../src/bars.js"></script>
     <style>
+			.axis text {
+			  font: 10px sans-serif;
+			}
 
+			.axis line,
+			.axis path {
+			  fill: none;
+			  stroke: #000;
+			  shape-rendering: crispEdges;
+			}
     </style>
 	</head>
+
 	<body>
 		<div id="bar-viz"></div>
 	</body>
-  <script>
+
+	<script>
 		var data = [
 			{
 				name: 'tom',
@@ -44,6 +56,14 @@
 				value: 10
 			}
 		];
+
+		var XAxisChart = d3.select('#bar-viz')
+			.append('svg')
+			.chart('XAxis')
+			.width(600)
+			.height(500);
+
+		XAxisChart.draw(data);
 
 
 		var BarChart = d3.select('#bar-viz')
