@@ -6,6 +6,11 @@
     "visualization",
     "svg",
     "composable",
-    "reusable"    
-  ]
+    "reusable"
+  ],
+  "devDependencies": {
+    "broccoli": "^0.16.4",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-merge-trees": "^0.2.2"
+  }
 }
