@@ -2,6 +2,10 @@
   "name": "d3-charts-gallery",
   "description": "A gallery of reusable, configurable and composable charts built with d3.js and d3.chart",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selvagsz/d3-charts-gallery.git"
+  }
   "keywords": [
     "visualization",
     "svg",
