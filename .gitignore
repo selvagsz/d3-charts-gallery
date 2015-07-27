@@ -1,1 +1,6 @@
+#output files
+dist
+
+#dependencies
 node_modules
+bower_components

@@ -21,7 +21,7 @@ d3.chart('XAxis', {
     });
 
     chart.layer('xaxis', xAxisBase, {
-      dataBind: function() {
+      dataBind: function(data) {
         var chart = this.chart();
 
         chart.x.domain(data.map(function(d){ return d.name; }));
